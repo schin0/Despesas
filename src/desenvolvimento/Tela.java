@@ -27,17 +27,275 @@ public class Tela extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblReceita = new javax.swing.JPanel();
+        lblImg = new javax.swing.JLabel();
+        lblAlimentacao = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        lblTransporte = new javax.swing.JLabel();
+        lblSaude = new javax.swing.JLabel();
+        lblCompras = new javax.swing.JLabel();
+        lblMoradia = new javax.swing.JLabel();
+        lblOutros = new javax.swing.JLabel();
+        lblReserva = new javax.swing.JLabel();
+        lblPorcAlimentacao = new javax.swing.JLabel();
+        lblTituloResultadoDespesas = new javax.swing.JLabel();
+        txtlReceita = new javax.swing.JTextField();
+        lblTituloResutado = new javax.swing.JLabel();
+        lblResultado = new javax.swing.JLabel();
+        txtTransporte = new javax.swing.JTextField();
+        txtAlimentacao = new javax.swing.JTextField();
+        txtMoradia = new javax.swing.JTextField();
+        txtCompras = new javax.swing.JTextField();
+        txtReserva = new javax.swing.JTextField();
+        txtOutros = new javax.swing.JTextField();
+        txtSaude = new javax.swing.JTextField();
+        lblTotalDespesas = new javax.swing.JLabel();
+        lblPorcTransporte = new javax.swing.JLabel();
+        lblPorcMoradia = new javax.swing.JLabel();
+        lblPorcSaude = new javax.swing.JLabel();
+        lblPorcCompras = new javax.swing.JLabel();
+        lblPorcOutros = new javax.swing.JLabel();
+        lblPorcReserva = new javax.swing.JLabel();
+        btnCalcular = new javax.swing.JButton();
+        btnLimpar = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblImg.setIcon(new javax.swing.ImageIcon("C:\\Users\\schin\\OneDrive\\Área de Trabalho\\ETEC\\Atividades\\TPR\\despesas2.jpg")); // NOI18N
+
+        lblAlimentacao.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        lblAlimentacao.setText("Alimentação");
+
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel3.setText("Receita");
+
+        lblTransporte.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        lblTransporte.setText("Transporte");
+
+        lblSaude.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        lblSaude.setText("Saúde");
+
+        lblCompras.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        lblCompras.setText("Compras Gerais");
+
+        lblMoradia.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        lblMoradia.setText("Moradia");
+
+        lblOutros.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        lblOutros.setText("Outros");
+
+        lblReserva.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        lblReserva.setText("Fundo de Reserva ");
+
+        lblPorcAlimentacao.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblPorcAlimentacao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPorcAlimentacao.setText("...%");
+
+        lblTituloResultadoDespesas.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblTituloResultadoDespesas.setText("Total Despesas");
+
+        txtlReceita.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        lblTituloResutado.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblTituloResutado.setText("Resultado");
+
+        lblResultado.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblResultado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblResultado.setText("...");
+
+        txtTransporte.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        txtAlimentacao.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        txtMoradia.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        txtCompras.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        txtReserva.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        txtOutros.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        txtSaude.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+
+        lblTotalDespesas.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblTotalDespesas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTotalDespesas.setText("...");
+
+        lblPorcTransporte.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblPorcTransporte.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPorcTransporte.setText("...%");
+
+        lblPorcMoradia.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblPorcMoradia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPorcMoradia.setText("...%");
+
+        lblPorcSaude.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblPorcSaude.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPorcSaude.setText("...%");
+
+        lblPorcCompras.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblPorcCompras.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPorcCompras.setText("...%");
+
+        lblPorcOutros.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblPorcOutros.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPorcOutros.setText("...%");
+
+        lblPorcReserva.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblPorcReserva.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPorcReserva.setText("...%");
+
+        btnCalcular.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnCalcular.setText("Calcular");
+
+        btnLimpar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnLimpar.setText("Limpar");
+
+        javax.swing.GroupLayout lblReceitaLayout = new javax.swing.GroupLayout(lblReceita);
+        lblReceita.setLayout(lblReceitaLayout);
+        lblReceitaLayout.setHorizontalGroup(
+            lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lblReceitaLayout.createSequentialGroup()
+                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTransporte)
+                            .addGroup(lblReceitaLayout.createSequentialGroup()
+                                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3)
+                                    .addComponent(lblAlimentacao)
+                                    .addComponent(lblSaude)
+                                    .addComponent(lblMoradia)
+                                    .addComponent(lblCompras)
+                                    .addComponent(lblReserva)
+                                    .addComponent(lblOutros))
+                                .addGap(37, 37, 37)
+                                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                                        .addComponent(txtOutros, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lblPorcOutros, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                                        .addComponent(txtReserva, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lblPorcReserva, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                                        .addComponent(txtCompras, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lblPorcCompras, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtlReceita, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                                        .addComponent(txtAlimentacao, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lblPorcAlimentacao, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                                        .addComponent(txtMoradia, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lblPorcMoradia, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addGroup(lblReceitaLayout.createSequentialGroup()
+                                            .addComponent(txtSaude, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(10, 10, 10)
+                                            .addComponent(lblPorcSaude, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(lblReceitaLayout.createSequentialGroup()
+                                            .addComponent(txtTransporte, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(lblPorcTransporte, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                        .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(lblReceitaLayout.createSequentialGroup()
+                                .addGap(88, 88, 88)
+                                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnCalcular)
+                                    .addComponent(btnLimpar)))
+                            .addGroup(lblReceitaLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                                        .addGap(24, 24, 24)
+                                        .addComponent(lblTituloResutado)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                                        .addComponent(lblTituloResultadoDespesas)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lblTotalDespesas, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                        .addGap(136, 136, 136)
+                        .addComponent(lblImg)))
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+        lblReceitaLayout.setVerticalGroup(
+            lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lblReceitaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblImg, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtlReceita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                        .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblAlimentacao)
+                            .addComponent(txtAlimentacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblPorcAlimentacao))
+                        .addGap(18, 18, 18)
+                        .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblTransporte)
+                            .addComponent(txtTransporte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblPorcTransporte))
+                        .addGap(20, 20, 20)
+                        .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblSaude)
+                            .addComponent(txtSaude, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblPorcSaude)))
+                    .addGroup(lblReceitaLayout.createSequentialGroup()
+                        .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblTituloResultadoDespesas)
+                            .addComponent(lblTotalDespesas))
+                        .addGap(75, 75, 75)
+                        .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblResultado)
+                            .addComponent(lblTituloResutado))))
+                .addGap(18, 18, 18)
+                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblMoradia)
+                    .addComponent(txtMoradia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPorcMoradia))
+                .addGap(13, 13, 13)
+                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCompras)
+                    .addComponent(txtCompras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPorcCompras))
+                .addGap(18, 18, 18)
+                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblReserva)
+                    .addComponent(txtReserva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPorcReserva)
+                    .addComponent(btnCalcular))
+                .addGap(18, 18, 18)
+                .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblOutros)
+                    .addGroup(lblReceitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtOutros, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblPorcOutros)
+                        .addComponent(btnLimpar)))
+                .addContainerGap(32, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(lblReceita, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblReceita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -79,5 +337,36 @@ public class Tela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCalcular;
+    private javax.swing.JButton btnLimpar;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lblAlimentacao;
+    private javax.swing.JLabel lblCompras;
+    private javax.swing.JLabel lblImg;
+    private javax.swing.JLabel lblMoradia;
+    private javax.swing.JLabel lblOutros;
+    private javax.swing.JLabel lblPorcAlimentacao;
+    private javax.swing.JLabel lblPorcCompras;
+    private javax.swing.JLabel lblPorcMoradia;
+    private javax.swing.JLabel lblPorcOutros;
+    private javax.swing.JLabel lblPorcReserva;
+    private javax.swing.JLabel lblPorcSaude;
+    private javax.swing.JLabel lblPorcTransporte;
+    private javax.swing.JPanel lblReceita;
+    private javax.swing.JLabel lblReserva;
+    private javax.swing.JLabel lblResultado;
+    private javax.swing.JLabel lblSaude;
+    private javax.swing.JLabel lblTituloResultadoDespesas;
+    private javax.swing.JLabel lblTituloResutado;
+    private javax.swing.JLabel lblTotalDespesas;
+    private javax.swing.JLabel lblTransporte;
+    private javax.swing.JTextField txtAlimentacao;
+    private javax.swing.JTextField txtCompras;
+    private javax.swing.JTextField txtMoradia;
+    private javax.swing.JTextField txtOutros;
+    private javax.swing.JTextField txtReserva;
+    private javax.swing.JTextField txtSaude;
+    private javax.swing.JTextField txtTransporte;
+    private javax.swing.JTextField txtlReceita;
     // End of variables declaration//GEN-END:variables
 }
