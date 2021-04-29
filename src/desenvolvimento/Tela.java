@@ -100,6 +100,11 @@ public class Tela extends javax.swing.JFrame {
         lblTituloResultadoDespesas.setText("Total Despesas");
 
         txtlReceita.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        txtlReceita.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtlReceitaActionPerformed(evt);
+            }
+        });
 
         lblTituloSituacao.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lblTituloSituacao.setText("Situação");
@@ -192,10 +197,7 @@ public class Tela extends javax.swing.JFrame {
                         .addGap(37, 37, 37)
                         .addGroup(painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblImg)
-                            .addGroup(painelLayout.createSequentialGroup()
-                                .addComponent(txtAlimentacao, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(233, 233, 233)
-                                .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtlReceita, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(painelLayout.createSequentialGroup()
                                 .addGroup(painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(painelLayout.createSequentialGroup()
@@ -209,7 +211,7 @@ public class Tela extends javax.swing.JFrame {
                                             .addComponent(txtMoradia, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(txtSaude, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(txtTransporte, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtlReceita, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtAlimentacao, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(18, 18, 18)
                                         .addGroup(painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(lblPorcReserva, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -237,9 +239,11 @@ public class Tela extends javax.swing.JFrame {
                                         .addComponent(lblTituloSituacao))
                                     .addGroup(painelLayout.createSequentialGroup()
                                         .addGap(135, 135, 135)
-                                        .addComponent(btnLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addGroup(painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btnLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                     .addComponent(lblAlimentacao))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
         painelLayout.setVerticalGroup(
             painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -250,14 +254,14 @@ public class Tela extends javax.swing.JFrame {
                     .addGroup(painelLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                         .addGroup(painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtAlimentacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
+                            .addComponent(jLabel3)
+                            .addComponent(txtlReceita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(49, 49, 49)
                         .addGroup(painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblAlimentacao, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(txtlReceita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lblPorcAlimentacao)))
+                                .addComponent(lblPorcAlimentacao)
+                                .addComponent(txtAlimentacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -315,7 +319,7 @@ public class Tela extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(41, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(painel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -359,6 +363,14 @@ public class Tela extends javax.swing.JFrame {
         lblTotalDespesas.setText("...");
         lblResultado.setText("...");
         lblSituacao.setText("...");
+        txtAlimentacao.setText("");
+        txtCompras.setText("");
+        txtMoradia.setText("");
+        txtOutros.setText("");
+        txtReserva.setText("");
+        txtTransporte.setText("");
+        txtlReceita.setText("");
+        txtSaude.setText("");
     }//GEN-LAST:event_btnLimparActionPerformed
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
@@ -375,8 +387,6 @@ public class Tela extends javax.swing.JFrame {
 
         //Total Despesas
         totalDespesas = alimentacao + transporte + saude + moradia + compras + reserva + outros;
-        //Mostrar Despesas
-        lblTotalDespesas.setText("R$ " + dfReal.format(totalDespesas));
 
         //Calcular Porcentagens
         porcAlimentacao = (alimentacao / totalDespesas) * 100;
@@ -386,6 +396,10 @@ public class Tela extends javax.swing.JFrame {
         porcCompras = (compras / totalDespesas) * 100;
         porcReserva = (reserva / totalDespesas) * 100;
         porcOutros = (outros / totalDespesas) * 100;
+        
+        //Mostrar Despesas
+        lblTotalDespesas.setText("R$ " + dfReal.format(totalDespesas));
+
         //Mostrar Porcentagens
         lblPorcAlimentacao.setText(dfPorc.format(porcAlimentacao) + "%");
         lblPorcTransporte.setText(dfPorc.format(porcTransporte) + "%");
@@ -394,9 +408,10 @@ public class Tela extends javax.swing.JFrame {
         lblPorcCompras.setText(dfPorc.format(porcCompras) + "%");
         lblPorcReserva.setText(dfPorc.format(porcReserva) + "%");
         lblPorcOutros.setText(dfPorc.format(porcOutros) + "%");
-
+        
         //Resultado
         resultado = receita - totalDespesas;
+        
         //Mostrar Resultado
         lblResultado.setText("R$ " + dfReal.format(resultado));
         lblSituacao.setText("" +  resultado);
@@ -407,6 +422,10 @@ public class Tela extends javax.swing.JFrame {
             lblSituacao.setText("Falta controle financeiro");
         }
     }//GEN-LAST:event_btnCalcularActionPerformed
+
+    private void txtlReceitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtlReceitaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtlReceitaActionPerformed
 
     /**
      * @param args the command line arguments
